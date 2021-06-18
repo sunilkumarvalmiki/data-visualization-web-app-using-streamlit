@@ -116,7 +116,7 @@ if st.sidebar.checkbox('Graphics'):
         st.set_option('deprecation.showPyplotGlobalUse', False)
         st.info("If error, please adjust column name on side panel.")
         column_count_plot = st.sidebar.selectbox("Choose a column to plot count. Try Selecting attributes ",df.columns)
-        hue_opt = st.sidebar.selectbox("Optional categorical variables (countplot hue). Try Selecting Speci ",df.columns.insert(0,None))
+        hue_opt = st.sidebar.selectbox("Optional categorical variables. Try Selecting attributes ",df.columns.insert(0,None))
         # if st.checkbox('Plot Countplot'):
         fig = sns.countplot(x=column_count_plot,data=df,hue=hue_opt)
         st.pyplot()
@@ -146,8 +146,7 @@ if st.sidebar.checkbox('Graphics'):
 
 st.markdown(" > Thank you for exploring Movie datasets. This is my first Streamlit work. Feedbacks are highly welcomed.")
 
-
-st.sidebar.info(" [Source Article](https://github.com/allisonhorst/palmerpenguins) | [Twitter  Tags]()")
-st.sidebar.info("Project is done by [sunil kumar]()")
-st.sidebar.info("Self Exploratory Visualization on Movies - Brought To you By [Sunil Kumar]()")
+st.sidebar.info(" [Source Article](https://github.com/sunilkumarvalmiki/data-visualization-web-app-using-streamlit) | [Twitter  Tags](https://twitter.com/SunilkumarValm1/status/1405965400211296257)")
+st.sidebar.info("Project is done by [sunil kumar](https://twitter.com/SunilkumarValm1)")
+st.sidebar.info("Self Exploratory Visualization on Movies - Brought To you By [Sunil Kumar](https://github.com/sunilkumarvalmiki)")
 st.sidebar.text("Built with ❤️ Streamlit")
