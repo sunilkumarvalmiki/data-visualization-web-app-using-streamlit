@@ -15,6 +15,7 @@
         "nrows",
         "numpy",
         "pyplot",
+        "streamlit",
         "valmiki"
     ]
 }
