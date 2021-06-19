@@ -12,7 +12,7 @@ DATA_URL = ("movies_data.csv")
 
 st.markdown("# Self Exploratory Visualization on movies data")
 st.markdown("Explore the dataset to know more about movies")
-img=Image.open('images/movie_Camera.jpg')
+img=Image.open('images/movie_camera.jpg')
 st.image(img,width=100)
 
 
